@@ -13,7 +13,7 @@ body{
     font-family: "Roboto-Thin";
     background-color: #BEAB90;
 }
-h1{
+h1, h2, h3{
     font-family: "School Book New";
 }
 /* *** bootstrap styles *** */
@@ -43,15 +43,19 @@ h1{
 .row{
 
 }   
-#about .col-md-5{
-    background-image: url('assets/images/somethingdeep500.png');
+#img-about{
+    background-image: url('assets/images/brick%20wall.jpg');
     height: 400px;
     background-repeat: no-repeat;
 }
-#about .col-md-7{
-    font-size: 1.5em;
+#about .col-md-5{
+    font-size: 1.25em;
 }
-
+#menu .col-md-4{
+    background-image: url('assets/images/what_i_learned_in_cqc_school_is.jpg');
+    height: 400px;
+    background-repeat: no-repeat;
+}
 /* *** main desktop styles *** */
 @media (min-width: 768px){
     #header{
