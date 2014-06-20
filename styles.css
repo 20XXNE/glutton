@@ -39,22 +39,93 @@ h1, h2, h3{
   left: 0;
   min-width: 100%;
   height: 500px;
-}
-.row{
-
-}   
+}  
 #img-about{
-    background-image: url('assets/images/brick%20wall.jpg');
+    background-image: url('assets/img/brick%20wall.jpg');
     height: 400px;
     background-repeat: no-repeat;
 }
-#about .col-md-5{
+p{
     font-size: 1.25em;
 }
 #menu .col-md-4{
-    background-image: url('assets/images/what_i_learned_in_cqc_school_is.jpg');
-    height: 400px;
+    background-image: url('assets/img/what_i_learned_in_cqc_school_is.jpg');
+    height: 321px; /* scale down images to around 300px before using */
+    margin: 0 5px 0 5px;
     background-repeat: no-repeat;
+    opacity: 0.5;
+    color: rgba(0, 0, 0, 1);
+    transition: opacity 0.4s, color 0.4s;
+}
+#menu .col-md-4:hover{
+    opacity: 1;
+    color: rgba(0, 0, 0, 0.1);
+}
+.modal-body{
+    background-color: #BEAB90;
+}
+.modal-header, .modal-footer{
+    background-color: #E7DA9C;   
+}
+/* mobile menu */
+#menu .img-responsive{
+        background-image: url('assets/img/what_i_learned_in_cqc_school_is.jpg');
+        height: 321px; /* scale down images to around 300px before using */
+        margin: 5px 5px 5px; 5px;
+        background-repeat: no-repeat;
+        opacity: 0.5;
+        color: rgba(0, 0, 0, 1);
+        transition: opacity 0.4s, color 0.4s;
+    }
+    #menu .img-responsive:hover{
+        opacity: 1;
+        color: rgba(0, 0, 0, 0.1);
+    }
+#menu h1{
+    font-family: "Roboto-thin";
+}
+#menu-anchor, #about-anchor, #gallery-anchor, #who-anchor{  
+    padding-top: 50px; /* stops scrolling nav before hitting text */
+    margin-top: -50px;  
+}
+.gallery .img-responsive{
+    background-image: url('assets/img/1322025046607.jpg');
+    height: 200px;  /* scale down images to around 300px before using */
+    background-repeat: no-repeat;
+    margin: 5px 5px 5px 5px;
+    border-radius: 5px;
+    border: #BEAB90;
+    text-decoration: none;
+    transition: color 0.5s ease-out;
+}
+.gallery .img-responsive:hover{
+    border: #4ae;
+}
+.chef-bio p{
+    margin-top: 10px;
+}
+.chef-bio .img-responsive{
+    background-image:url('assets/img/oh you.jpg');
+    height: 350px;
+    background-repeat: no-repeat;
+    margin: 5px 5px 5px 5px;
+}
+.news{
+    font-size: 2em;
+    margin-top: 2em;
+}
+.footer{
+    background-color: #E7DA9C;
+}
+.fa{
+    margin: 0 auto;
+    margin-left: 15px;
+    margin-right: 15px;
+    opacity: .6;
+    transition: opacity 0.4s;
+}
+.fa:hover{
+    opacity: 1;
 }
 /* *** main desktop styles *** */
 @media (min-width: 768px){
@@ -75,7 +146,7 @@ h1, h2, h3{
     ul li{
         font-family: "School Book New";
         display: inline-block;
-        margin: 0.75em 3.5em 0.75em 3.5em;
+        margin: 0.75em 2.75em 0.75em 2.75em;
         list-style: none;
         font-size: 1.2em;
         border-radius: 9px;
@@ -89,16 +160,9 @@ h1, h2, h3{
         color: #EBFF33;
         text-decoration: none;
     }
-    .logo{
-        z-index: 2;
-        background-image: url("assets/images/gluttonlogo1.png");
-        background-repeat: no-repeat;
-        display: inline-block;
-        text-align: center;
-        height: 150px;
-        width: 150px;
-        margin: 0 auto;
-        padding: 0;
+    ul li img{
+        position: relative;
+        bottom: 6px;
     }
 }
 @media (max-width: 768px;){
@@ -108,3 +172,5 @@ h1, h2, h3{
     #about col-md-7{
         text-align: center;
 }
+
+    
