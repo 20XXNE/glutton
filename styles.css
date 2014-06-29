@@ -78,6 +78,10 @@ p{
     color: rgba(0, 0, 0, 1);
     transition: opacity 0.4s, color 0.4s;
 }
+.menu .col-xs-4{
+    opacity: 1;
+    color: rgba(0, 0, 0, 0.1)
+}
 .menu .col-md-4:hover{
     opacity: 1;
     color: rgba(0, 0, 0, 0.1);
@@ -112,7 +116,7 @@ p{
     padding-top: 50px; /* stops scrolling nav before hitting text */
     margin-top: -50px;  
 }
-button{
+#button{
     margin 0 auto;
     text-align: center;
 }
@@ -196,13 +200,13 @@ button{
         font-size: 1.4em;
     }
     ul li a{
-        color: #42210B;
+        color: #FFFFFF;
         transition: color 0.4s;
         z-index: 4;
         text-align: center;
     }
     ul li a:hover{
-        color: #EBFF33;
+        color: #42210B;
         text-decoration: none;
     }
     ul li img{
