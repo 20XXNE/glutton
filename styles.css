@@ -11,7 +11,7 @@
 }
 body{
     font-family: "Roboto-Thin";
-    background-color: #BEAB90;
+    background: url("assets/img/woodbackground.jpg") fixed repeat;
 }
 h1, h2, h3{
     font-family: "School Book New";
@@ -41,15 +41,36 @@ h1, h2, h3{
   height: 500px;
 }  
 #img-about{
-    background-image: url('assets/img/brick%20wall.jpg');
+    background-image: url('assets/img/chefs.png');
     height: 400px;
     background-repeat: no-repeat;
 }
 p{
     font-size: 1.25em;
 }
-#menu .col-md-4{
-    background-image: url('assets/img/what_i_learned_in_cqc_school_is.jpg');
+#about p, .chef-bio p, #info-text{
+    background-color: #BEAB90;
+    padding: 5px;
+    border-top-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	border-top-right-radius: 20px;
+	border-bottom-left-radius: 20px;   
+}
+/* menu */
+.menu #drinks, #drinks-mobile{
+    background-image: url("assets/img/drinks.png");
+}
+.menu #lunch, #lunch-mobile{
+    background-image: url("assets/img/drinks.png");
+}
+.menu #dinner, #dinner-mobile{
+    background-image: url("assets/img/dinner.png");
+}
+.menu #dessert, #dessert-mobile{
+    background-image: url("assets/img/dessert.png");
+}
+
+.menu .col-md-4{
     height: 321px; /* scale down images to around 300px before using */
     margin: 0 5px 0 5px;
     background-repeat: no-repeat;
@@ -57,7 +78,7 @@ p{
     color: rgba(0, 0, 0, 1);
     transition: opacity 0.4s, color 0.4s;
 }
-#menu .col-md-4:hover{
+.menu .col-md-4:hover{
     opacity: 1;
     color: rgba(0, 0, 0, 0.1);
 }
@@ -67,8 +88,11 @@ p{
 .modal-header, .modal-footer{
     background-color: #E7DA9C;   
 }
+.navbar{
+    background-color: #E7DA9C;
+}
 /* mobile menu */
-#menu .img-responsive{
+.menu .img-responsive{
         background-image: url('assets/img/what_i_learned_in_cqc_school_is.jpg');
         height: 321px; /* scale down images to around 300px before using */
         margin: 5px 5px 5px; 5px;
@@ -77,22 +101,40 @@ p{
         color: rgba(0, 0, 0, 1);
         transition: opacity 0.4s, color 0.4s;
     }
-    #menu .img-responsive:hover{
+    .menu .img-responsive:hover{
         opacity: 1;
         color: rgba(0, 0, 0, 0.1);
     }
-#menu h1{
+.menu h1{
     font-family: "Roboto-thin";
 }
 #menu-anchor, #about-anchor, #gallery-anchor, #who-anchor{  
     padding-top: 50px; /* stops scrolling nav before hitting text */
     margin-top: -50px;  
 }
+button{
+    margin 0 auto;
+    text-align: center;
+}
+#more{
+    margin: 0 auto;
+    text-align: center;
+    transition: background-color 0.4s, color 0.35s;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+#more h3{
+    text-decoration: none;
+}
+#more:hover{
+    background-color: #EBFF33;
+    color: #000000;
+}
 .gallery .img-responsive{
     background-image: url('assets/img/1322025046607.jpg');
-    height: 200px;  /* scale down images to around 300px before using */
+    height: 275px;  /* scale down images to around 300px before using */
     background-repeat: no-repeat;
-    margin: 5px 5px 5px 5px;
+    margin: 5px 10px 5px 10px;
     border-radius: 5px;
     border: #BEAB90;
     text-decoration: none;
@@ -129,32 +171,35 @@ p{
 }
 /* *** main desktop styles *** */
 @media (min-width: 768px){
-    #header{
+    #desktop-nav{
         width: 100%;
-        overflow: hidden;
-        margin: 0;
+        margin: 0 auto;
         background-color: #BEAB90;
-        text-align: center;
-        position: fixed;
         height: 45px;
         z-index: 3;
+        text-align: center;
     }
     #nav{
         text-align: center;
         display: inline-block;
     }
+    ul{
+        margin: 0 auto;
+        text-align: center;
+    }
     ul li{
         font-family: "School Book New";
         display: inline-block;
-        margin: 0.75em 2.75em 0.75em 2.75em;
+        text-align: center;
+        margin: 0 1.3em 0 1.3em;
         list-style: none;
-        font-size: 1.2em;
-        border-radius: 9px;
+        font-size: 1.4em;
     }
     ul li a{
         color: #42210B;
         transition: color 0.4s;
         z-index: 4;
+        text-align: center;
     }
     ul li a:hover{
         color: #EBFF33;

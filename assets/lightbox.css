@@ -1,7 +1,7 @@
 /* Preload images */
 body:after {
-  content: url('/img/close.png') url(
-'/img/loading.gif') url('/img/prev.png') url('/img/next.png');
+  content: url('.../assets/img/close.png') url(
+'/img/loading.gif') url('.../assets/img/prev.png') url('.../assets/img/next.png');
   display: none;
 }
 

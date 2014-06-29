@@ -1,5 +1,5 @@
 $(document).ready(function(){   
-    var $breakfast = $('#breakfast-menu').modal({
+    var $drinks = $('#drinks-menu').modal({
         show: false
     });
     var $lunch = $('#lunch-menu').modal({
@@ -11,8 +11,8 @@ $(document).ready(function(){
     var $dessert = $('#dessert-menu').modal({
         show: false
     });
-    $('#breakfast').on('click', function() {
-        $breakfast.modal('show');
+    $('#drinks').on('click', function() {
+        $drinks.modal('show');
     });
     $('#lunch').on('click', function() {
         $lunch.modal('show');
@@ -23,8 +23,8 @@ $(document).ready(function(){
     $('#dessert').on('click', function() {
         $dessert.modal('show');
     });
-    $('#breakfast-mobile').on('click', function() {
-        $breakfast.modal('show');
+    $('#drinks-mobile').on('click', function() {
+        $drinks.modal('show');
     });
     $('#lunch-mobile').on('click', function() {
         $lunch.modal('show');
