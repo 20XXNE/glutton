@@ -19,7 +19,7 @@
     <!-- *** tablet, desktop, etc. navbar *** -->
     <div id="header" class="hidden-xs hidden-sm">
             <ul>
-                <li><a href="#about-anchor">ABOUT</a></li>
+                <li><a href="#about-anchor">ABOUT US</a></li>
                 <li><a href="#menu-anchor">MENU</a></li>
                 <li><a href="#top"><img src="assets/img/blackgluttonfinal2.png"></a></li>
                 <li><a href="#gallery-anchor">GALLERY</a></li>
@@ -100,8 +100,8 @@
     <div class="container-fluid">
         <h1 id="about-anchor" class="text-center">ABOUT US</h1>
         <div class="row featurette hidden-xs hidden-sm" id="about">
-            <div class="col-md-1"></div>
-            <div class="col-md-5 img-responsive" id="img-about">
+            <div class="col-md-2"></div>
+            <div class="col-md-4 img-responsive" id="img-about">
             </div>
             <div class="col-md-5">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -168,12 +168,37 @@
                     <p>SUN 9AM-9PM</p>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-5 text-center" id="ingredients">
                 <h2>View a list of locally sourced ingredients and products we use!</h2>
-            <div class="col-md-2"></div>
             </div>
+            <div class="col-md-1"></div>
         </div>
     
+    <!-- ingredients modal -->
+    
+    <div class="modal fade" id="ingredients-menu" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="myModalLabel">Local Ingredients</h4>
+          </div>
+          <div class="modal-body">
+            <h3 class="text-center">Steak with Milk & Jelly Beans</h3>
+                  <div class="row">
+                      <div class="col-xs-3"></div>
+                      <div class="col-xs-6"></div>
+                          <img src="assets/img/steak.jpeg">
+                      <div class="col-xs-3"></div>      
+                  </div>
+                  <p class="text-center">Up my sleevesUp my sleevesUp my sleevesUp my sleevesUp my sleevesUp my sleevesUp my sleevesUp my sleevesUp my sleevesUp my sleevesUp my sleeves </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- mobile info -->
     
         <div class="row visible-xs visible-sm">
@@ -198,36 +223,36 @@
 
         <div class="row hidden-xs hidden-sm menu">
             <div class="col-md-2"></div>
-            <div class="col-md-4 img-responsive" data-toggle="modal" id="lunch"><h1>Lunch></h1></div>
-            <div class="col-md-4 img-responsive" data-toggle="modal" data-target="dinner-menu" id="dinner"><h1>Dinner></h1></div>
+            <div class="col-md-4 img-responsive" data-toggle="modal" id="lunch"><h1>Lunch</h1></div>
+            <div class="col-md-4 img-responsive" data-toggle="modal" data-target="dinner-menu" id="dinner"><h1>Dinner</h1></div>
             <div class="col-md-2"></div>
         </div>
         <div class="row hidden-xs hidden-sm menu">
             <div class="col-md-2"></div>
-            <div class="col-md-4 img-responsive" data-toggle="modal" data-target="dessert-menu" id="dessert"><h1>Dessert></h1></div>
-            <div class="col-md-4 img-responsive" data-toggle="modal" data-target="drinks-menu" id="drinks"><h1>Drinks></h1></div>
+            <div class="col-md-4 img-responsive" data-toggle="modal" data-target="dessert-menu" id="dessert"><h1>Dessert</h1></div>
+            <div class="col-md-4 img-responsive" data-toggle="modal" data-target="drinks-menu" id="drinks"><h1>Drinks</h1></div>
             <div class="col-md-2"></div>
         </div>
         <!-- mobile menu -->
 
         <div class="row visible-xs visible-sm menu mobile-menu">
             <div class="col-xs-4"></div>
-            <div class="col-xs-4 img-responsive" data-toggle="modal" data-target="lunch-menu" id="lunch-mobile"><h2>Lunch></h2></div>
+            <div class="col-xs-4 img-responsive" data-toggle="modal" data-target="lunch-menu" id="lunch-mobile"><h2>Lunch</h2></div>
             <div class="col-xs-4"></div>
         </div>
         <div class="row visible-xs visible-sm menu">
             <div class="col-xs-4"></div>
-            <div class="col-xs-4 img-responsive" data-toggle="modal" data-target="dinner-menu" data-toggle="modal" data-target="dinner-menu-mobile" id="dinner-mobile"><h2>Dinner></h2></div>
+            <div class="col-xs-4 img-responsive" data-toggle="modal" data-target="dinner-menu" data-toggle="modal" data-target="dinner-menu-mobile" id="dinner-mobile"><h2>Dinner</h2></div>
             <div class="col-xs-4"></div>
         </div>
         <div class="row visible-xs visible-sm menu">
             <div class="col-xs-4"></div>
-            <div class="col-xs-4 img-responsive" data-toggle="modal" data-target="dessert-menu" id="dessert-mobile"><h2>Dessert></h2></div>
+            <div class="col-xs-4 img-responsive" data-toggle="modal" data-target="dessert-menu" id="dessert-mobile"><h2>Dessert</h2></div>
             <div class="col-xs-4"></div>
         </div>    
         <div class="row visible-xs visible-sm menu">
             <div class="col-xs-4"></div>
-            <div class="col-xs-4 img-responsive" data-toggle="modal" data-target="drinks-menu-mobile" id="drinks-mobile"><h2>Drinks></h2></div>
+            <div class="col-xs-4 img-responsive" data-toggle="modal" data-target="drinks-menu-mobile" id="drinks-mobile"><h2>Drinks</h2></div>
             <div class="col-xs-4"></div>
         </div>
     <!-- modal menus -->
@@ -452,9 +477,6 @@
             </a>
             <div class="col-xs-4"></div>
         </div>
-        
-        <div id="who-anchor"></div>
-        <h1 class="text-center" id="who">WHO WE ARE</h1>
         <div id="button">
             <button type="button" class="btn btn-primary text-center" id="more" data-toggle="collapse" 
    data-target="#hidden-desktop">
@@ -558,7 +580,9 @@
     </div>    
     
     <!-- desktop bios -->
-    
+    <div id="who-anchor">
+        <h1 class="text-center" id="who">WHO WE ARE</h1>
+    </div>
         <div class="row chef-bio hidden-xs hidden-sm" id="bio-1">
             <div class="col-md-2"></div>
             <div class="col-md-3 img-responsive"></div>

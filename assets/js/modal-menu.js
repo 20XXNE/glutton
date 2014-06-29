@@ -11,6 +11,12 @@ $(document).ready(function(){
     var $dessert = $('#dessert-menu').modal({
         show: false
     });
+    var $ingredients = $('#ingredients-menu').modal({
+        show: false
+    });
+    $('#ingredients').on('click', function() {
+        $ingredients.modal('show');
+    });
     $('#drinks').on('click', function() {
         $drinks.modal('show');
     });

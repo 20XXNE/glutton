@@ -11,7 +11,7 @@
 }
 body{
     font-family: "Roboto-Thin";
-    background: url("assets/img/woodbackground.jpg") fixed repeat;
+    background: url("assets/img/woodbackground-big.jpg") fixed repeat;
 }
 h1, h2, h3{
     font-family: "School Book New";
@@ -48,7 +48,7 @@ h1, h2, h3{
 p{
     font-size: 1.25em;
 }
-#about p, .chef-bio p, #info-text{
+#about p, .chef-bio p, #info-text, #ingredients{
     background-color: #BEAB90;
     padding: 5px;
     border-top-left-radius: 20px;
@@ -56,12 +56,18 @@ p{
 	border-top-right-radius: 20px;
 	border-bottom-left-radius: 20px;   
 }
+#ingredients{
+    transition: color 0.4s;
+}
+#ingredients:hover{
+        color: #42210B;
+    }
 /* menu */
 .menu #drinks, #drinks-mobile{
     background-image: url("assets/img/drinks.png");
 }
 .menu #lunch, #lunch-mobile{
-    background-image: url("assets/img/drinks.png");
+    background-image: url("assets/img/lunch.jpg");
 }
 .menu #dinner, #dinner-mobile{
     background-image: url("assets/img/dinner.png");
@@ -197,8 +203,9 @@ p{
         text-align: center;
         margin: 0 1.3em 0 1.3em;
         list-style: none;
-        font-size: 1.4em;
+        font-size: 1.375em;
     }
+    
     ul li a{
         color: #FFFFFF;
         transition: color 0.4s;
@@ -214,7 +221,7 @@ p{
         bottom: 6px;
     }
 }
-@media (max-width: 768px;){
+@media (max-width: 768px){
     .row{
         margin: 0 auto;
     }
@@ -222,4 +229,3 @@ p{
         text-align: center;
 }
 
-    
