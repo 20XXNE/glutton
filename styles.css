@@ -118,10 +118,6 @@ p{
 .menu h1{
     font-family: "Roboto-thin";
 }
-#menu-anchor, #about-anchor, #gallery-anchor, #who-anchor{  
-    padding-top: 50px; /* stops scrolling nav before hitting text */
-    margin-top: -50px;  
-}
 #button{
     margin 0 auto;
     text-align: center;
