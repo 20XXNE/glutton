@@ -48,7 +48,7 @@ h1, h2, h3{
 p{
     font-size: 1.25em;
 }
-#about p, .chef-bio p, #info-text, #ingredients{
+#about p, .chef-bio p, #info-text{
     background-color: #BEAB90;
     padding: 5px;
     border-top-left-radius: 20px;
@@ -129,16 +129,16 @@ p{
 #more{
     margin: 0 auto;
     text-align: center;
-    transition: background-color 0.4s, color 0.35s;
+    transition: background-color 0.4s;
     margin-top: 15px;
     margin-bottom: 15px;
+    background-color: #BEAB90;
 }
 #more h3{
     text-decoration: none;
 }
 #more:hover{
-    background-color: #EBFF33;
-    color: #000000;
+    background-color: #42210B;
 }
 .gallery .img-responsive{
     background-image: url('assets/img/1322025046607.jpg');
@@ -207,13 +207,13 @@ p{
     }
     
     ul li a{
-        color: #FFFFFF;
+        color: #42210B;
         transition: color 0.4s;
         z-index: 4;
         text-align: center;
     }
     ul li a:hover{
-        color: #42210B;
+        color: #FFFFFF;
         text-decoration: none;
     }
     ul li img{
