@@ -48,7 +48,7 @@ h1, h2, h3{
 p{
     font-size: 1.25em;
 }
-#about p, .chef-bio p, #info-text{
+#about p, .chef-bio p, #info-text, .mail, form, #mc_embed_signup{
     background-color: #BEAB90;
     padding: 5px;
     border-top-left-radius: 20px;
