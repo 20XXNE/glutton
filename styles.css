@@ -48,7 +48,7 @@ h1, h2, h3{
 p{
     font-size: 1.25em;
 }
-#about p, .chef-bio p, #info-text, .mail, form, #mc_embed_signup{
+#about p, .chef-bio p, #info-text, .mail, form, #mc_embed_signup, .col-xs-6 p, .col-xs-4 p{
     background-color: #BEAB90;
     padding: 5px;
     border-top-left-radius: 20px;
@@ -215,6 +215,16 @@ p{
     ul li img{
         position: relative;
         bottom: 6px;
+    }
+    .footer{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 40px;
+        z-index: 999;
+    }
+    .news{
+        margin-bottom: 40px;
     }
 }
 @media (max-width: 768px){
