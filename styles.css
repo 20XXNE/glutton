@@ -16,6 +16,8 @@ body{
 h1, h2, h3{
     font-family: "School Book New";
 }
+
+
 /* *** bootstrap styles *** */
 .carousel {
   height: 500px;
@@ -40,9 +42,11 @@ h1, h2, h3{
   min-width: 100%;
   height: 500px;
 }  
+
+
 #img-about{
-    background-image: url('assets/img/chefs.png');
-    height: 400px;
+    background-image: url('assets/img/about.png');
+    height: 350px;
     background-repeat: no-repeat;
 }
 p{
@@ -137,7 +141,6 @@ p{
     background-color: #42210B;
 }
 .gallery .img-responsive{
-    background-image: url('assets/img/1322025046607.jpg');
     height: 275px;  /* scale down images to around 300px before using */
     background-repeat: no-repeat;
     margin: 5px 10px 5px 10px;
@@ -145,6 +148,18 @@ p{
     border: #BEAB90;
     text-decoration: none;
     transition: color 0.5s ease-out;
+}
+#img-1{
+    background-image: url('assets/img/galleryimg-1.png');
+}
+#img-2{
+    background-image: url('assets/img/galleryimg-2.png');
+}
+#img-3{
+    background-image: url('assets/img/galleryimg-3.png');
+}
+#img-4{
+    background-image: url('assets/img/galleryimg-4.png');
 }
 .gallery .img-responsive:hover{
     border: #4ae;
@@ -163,7 +178,7 @@ p{
     margin-top: 2em;
 }
 .footer{
-    background-color: #E7DA9C;
+    background-color: #BEAB90;
 }
 .fa{
     margin: 0 auto;
@@ -175,6 +190,26 @@ p{
 .fa:hover{
     opacity: 1;
 }
+
+/* more media queries */
+@media (min-width: 1250){
+    p{
+        font-size: 1.2em;
+    }
+     ul li{
+        margin: 0 1.2em 0 1.2em !important;
+        font-size: 1.2em !important;
+    }
+}
+@media (min-width: 1000px){
+     ul li{
+        margin: 0 1em 0 1em !important;
+        font-size: 1.2em !important;
+    }
+}
+
+
+
 /* *** main desktop styles *** */
 @media (min-width: 768px){
     #desktop-nav{
@@ -203,7 +238,7 @@ p{
     }
     
     ul li a{
-        color: #42210B;
+        color: #000000; /*#42210B*/
         transition: color 0.4s;
         z-index: 4;
         text-align: center;
@@ -223,8 +258,11 @@ p{
         height: 40px;
         z-index: 999;
     }
-    .news{
+    .contact{
         margin-bottom: 40px;
+    }
+    .contact p{
+        font-size: 2em;
     }
 }
 @media (max-width: 768px){
@@ -233,5 +271,15 @@ p{
     }
     #about col-md-7{
         text-align: center;
+    }
 }
 
+@media (max-width: 990px){
+    p{
+        font-size: 1em;
+    }
+    ul li{
+        margin: 0 0.7em 0 0.9em;
+        font-size: 1em;
+    }
+}
