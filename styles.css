@@ -173,6 +173,9 @@ p{
     background-repeat: no-repeat;
     margin: 5px 5px 5px 5px;
 }
+#joseph{
+    background-image:url('assets/img/joseph.png')
+}
 .news{
     font-size: 2em;
     margin-top: 2em;
