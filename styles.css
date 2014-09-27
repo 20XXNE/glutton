@@ -69,6 +69,7 @@ p{
 /* menu */
 .menu #drinks, #drinks-mobile{
     background-image: url("assets/img/drinks.png");
+    font-weight: bold;
 }
 .menu #lunch, #lunch-mobile{
     background-image: url("assets/img/lunch.jpg");
