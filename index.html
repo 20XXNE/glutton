@@ -13,6 +13,7 @@
     <link href="./assets/font-awesome-4.0.3/css/font-awesome.min.css" rel="stylesheet"/>
     <link rel="icon" type="image/png"
  href="assets/img/favicon.png"/>
+    <link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
 </head>
 <body>
     <div id="top"></div>
@@ -20,7 +21,7 @@
     <div id="header" class="hidden-xs hidden-sm">
             <ul>
                 <li><a href="#about-anchor">ABOUT US</a></li>
-                <li><a href="#menu-anchor">MENU</a></li>
+                <li class=""><a href="#menu-anchor">MENU</a></li>
                 <li><a href="#gallery-anchor">GALLERY</a></li>
                 <li><a href="#top"><img src="assets/img/newgluttonlogo.png"></a></li>
                 <li><a href="#who-anchor">WHO WE ARE</a></li>
@@ -134,7 +135,7 @@ they will be designed to invite interaction with the guests at the table, as the
             <div class="col-md-4">
                 <div id="info-text">
                     <h3>LOCATION</h3>
-                    <p>612 E. Carson. Ave.</p>
+                    <p><a href="https://www.google.com/maps/place/612+Carson+Ave,+Las+Vegas,+NV+89101" target="_blank">612 E. Carson. Ave.</a></p>
                     <p>Las Vegas, NV 89101</br>
                     <h3>HOURS OF OPERATION</h3>
                     <p>MON-SAT 11AM-11PM</p>
@@ -155,17 +156,17 @@ they will be designed to invite interaction with the guests at the table, as the
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h4 class="modal-title" id="myModalLabel">Local Ingredients</h4>
+            <h4 class="modal-title" id="myModalLabel">Locals</h4>
           </div>
           <div class="modal-body">
-            <h3 class="text-center">Steak with Milk & Jelly Beans</h3>
+            <h3 class="text-center">Ingredients!</h3>
                   <div class="row">
                       <div class="col-xs-3"></div>
                       <div class="col-xs-6"></div>
                           <img src="assets/img/steak.jpeg">
                       <div class="col-xs-3"></div>      
                   </div>
-                  <p class="text-center">Up my sleevesUp my sleevesUp my sleevesUp my sleevesUp my sleevesUp my sleevesUp my sleevesUp my sleevesUp my sleevesUp my sleevesUp my sleeves </p>
+                  <p class="text-center">Ingredients! </p>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -179,7 +180,7 @@ they will be designed to invite interaction with the guests at the table, as the
             <div class="col-xs-3"></div>
             <div class="col-xs-6 text-center">
                 <h3>LOCATION</h3>
-                    <p> 612 E. Carson. Ave.</p>
+                <p><a href="https://www.google.com/maps/place/612+Carson+Ave,+Las+Vegas,+NV+89101" target="_blank">612 E. Carson. Ave.</a></p>
                     <p>Las Vegas, NV 89101</br>
                     <h3>HOURS OF OPERATION</h3>
                     <p>SAT 9AM-11PM</p>
@@ -207,6 +208,11 @@ they will be designed to invite interaction with the guests at the table, as the
             <div class="col-md-5 img-responsive" data-toggle="modal" data-target="drinks-menu" id="drinks"><h1><strong>DRINKS</strong></h1></div>
             <div class="col-md-1"></div>
         </div>
+        <div class="row hidden-xs hidden-sm menu">
+            <div class="col-md-3"></div>
+            <div class="col-md-5 img-responsive" data-toggle="modal" data-target="brunch-menu" id="brunch"><h1><strong>BRUNCH</strong></h1></div>
+            <div class="col-md-4"></div>
+        </div>
         <!-- mobile menu -->
 
         <div class="row visible-xs visible-sm menu mobile-menu">
@@ -229,8 +235,189 @@ they will be designed to invite interaction with the guests at the table, as the
             <div class="col-xs-6 img-responsive" data-toggle="modal" data-target="drinks-menu-mobile" id="drinks-mobile"><h2><strong>DRINKS</strong></h2></div>
             <div class="col-xs-3"></div>
         </div>
+    <div class="row visible-xs visible-sm menu">
+            <div class="col-xs-3"></div>
+            <div class="col-xs-6 img-responsive" data-toggle="modal" data-target="brunch-menu-mobile" id="brunch-mobile"><h2><strong>BRUNCH</strong></h2></div>
+            <div class="col-xs-3"></div>
+        </div>
     <!-- modal menus -->
         <div class="modal fade" id="drinks-menu" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">Drinks</h4>
+              </div>
+              <div class="modal-body">
+                  <h3 class="text-center">Chicken Liver Mousse</h3>
+                  <div class="row">
+                      <div class="col-xs-3"></div>
+                      <div class="col-xs-6"></div>
+                      <div class="col-xs-3"></div>      
+                  </div>
+                  <p class="text-center">With Pickled Mustard, Red Onion Marmalade, Grilled Bread</p>
+                  <h3 class="text-center">Warm Guegere (Cheese Puffs)</h3>
+                  <div class="row">
+                      <div class="col-xs-3"></div>
+                      <div class="col-xs-6"></div>
+                      <div class="col-xs-3"></div>      
+                  </div>
+                  <p class="text-center">Truffle, Emmantler</p>
+                  <h3 class="text-center">Whipped Peas</h3>
+                  <div class="row">
+                      <div class="col-xs-3"></div>
+                      <div class="col-xs-6"></div>
+                      <div class="col-xs-3"></div>      
+                  </div>
+                  <p class="text-center">With laughing bird shrimp, dill marinated tomatoes</p>
+                  <h3 class="text-center">Clams Casino Flatbread</h3>
+                  <div class="row">
+                      <div class="col-xs-3"></div>
+                      <div class="col-xs-6"></div>
+                      <div class="col-xs-3"></div>      
+                  </div>
+                  <p class="text-center">With Ricotta, Bacon BRead Crumbs, Olive Oil</p>
+                  <h3 class="text-center">House Made Italian Sausage Flat Bread</h3>
+                  <div class="row">
+                      <div class="col-xs-3"></div>
+                      <div class="col-xs-6"></div>
+                      <div class="col-xs-3"></div>      
+                  </div>
+                  <p class="text-center">Broccoli Raab Pesto, Mozzarella, Grana Padano</p>
+                  <h3 class="text-center">Pulled Lamb Flatbread</h3>
+                  <div class="row">
+                      <div class="col-xs-3"></div>
+                      <div class="col-xs-6"></div>
+                      <div class="col-xs-3"></div>      
+                  </div>
+                  <p class="text-center">Roasted Eggplant, Pickled Feta Red Onion</p>
+                  <h3 class="text-center">Pork "Lollypops"</h3>
+                  <div class="row">
+                      <div class="col-xs-3"></div>
+                      <div class="col-xs-6"></div>
+                      <div class="col-xs-3"></div>      
+                  </div>
+                  <p class="text-center">Chicharone, Jalapeno Bacon Jam, Cucumber Cream</p>
+                  <h3 class="text-center">Buffalo Style Sweetbreads</h3>
+                  <div class="row">
+                      <div class="col-xs-3"></div>
+                      <div class="col-xs-6"></div>
+                      <div class="col-xs-3"></div>      
+                  </div>
+                  <p class="text-center">Pickled Celery, Blue CHeese</p>
+                  <h3 class="text-center">Buffalo Style Sweetbreads</h3>
+                  <div class="row">
+                      <div class="col-xs-3"></div>
+                      <div class="col-xs-6"></div>
+                      <div class="col-xs-3"></div>      
+                  </div>
+                  <p class="text-center">Pickled Celery, Blue Cheese</p>
+                  <h3 class="text-center">General Tso Cauliflower</h3>
+                  <div class="row">
+                      <div class="col-xs-3"></div>
+                      <div class="col-xs-6"></div>
+                      <div class="col-xs-3"></div>      
+                  </div>
+                  <p class="text-center">Green Onion, Puffed Rice</p>
+                  <h3 class="text-center">Tomatoes & Melon</h3>
+                  <div class="row">
+                      <div class="col-xs-3"></div>
+                      <div class="col-xs-6"></div>
+                      <div class="col-xs-3"></div>      
+                  </div>
+                  <p class="text-center">Farm Tomato, Compressed Heirloom Melons, Burrata, Sherry Vinegar</p>
+                  <h3 class="text-center">Peach Salad</h3>
+                  <div class="row">
+                      <div class="col-xs-3"></div>
+                      <div class="col-xs-6"></div>
+                      <div class="col-xs-3"></div>      
+                  </div>
+                  <p class="text-center">Charred Onions, Candied Bacon, Aragula, Citrus-Sorghum Vinaigrette</p>
+                  <h3 class="text-center">Fried Green Tomatoes</h3>
+                  <div class="row">
+                      <div class="col-xs-3"></div>
+                      <div class="col-xs-6"></div>
+                      <div class="col-xs-3"></div>      
+                  </div>
+                  <p class="text-center">With Pimento Cheese, Crispy Pork Belly, Tomato Jam</p>
+                  <h3 class="text-center">Salmon Crudo</h3>
+                  <div class="row">
+                      <div class="col-xs-3"></div>
+                      <div class="col-xs-6"></div>
+                      <div class="col-xs-3"></div>      
+                  </div>
+                  <p class="text-center">Roasted Eggplant Puree, Pickled Radish, Olives, Pine Nuts</p>
+                  <h3 class="text-center">Calamari Fries</h3>
+                  <div class="row">
+                      <div class="col-xs-3"></div>
+                      <div class="col-xs-6"></div>
+                      <div class="col-xs-3"></div>      
+                  </div>
+                  <p class="text-center">With Spicy Mayo, Eel Sauce, Fried Almonds</p>
+                  <h3 class="text-center">Korean Meatballs</h3>
+                  <div class="row">
+                      <div class="col-xs-3"></div>
+                      <div class="col-xs-6"></div>
+                      <div class="col-xs-3"></div>      
+                  </div>
+                  <p class="text-center">Grilled Shishito, Kombucha Puree</p>
+                  <h3 class="text-center">Double R Ranch New York Steak</h3>
+                  <div class="row">
+                      <div class="col-xs-3"></div>
+                      <div class="col-xs-6"></div>
+                      <div class="col-xs-3"></div>      
+                  </div>
+                  <p class="text-center">Bone Marrow Crusted, Short Rib Cannelloni, Creamed Arugula</p>
+                  <h3 class="text-center">Peas & Corn</h3>
+                  <div class="row">
+                      <div class="col-xs-3"></div>
+                      <div class="col-xs-6"></div>
+                      <div class="col-xs-3"></div>      
+                  </div>
+                  <p class="text-center">With Corn Agnolotti, Kale Chips, Mint</p>
+                  <h3 class="text-center">Roasted Mussels</h3>
+                  <div class="row">
+                      <div class="col-xs-3"></div>
+                      <div class="col-xs-6"></div>
+                      <div class="col-xs-3"></div>      
+                  </div>
+                  <p class="text-center">Fregola, Fennel, Guijillo Broth, Grilled Bread</p>
+                  <h3 class="text-center">Wood Roasted Chicken</h3>
+                  <div class="row">
+                      <div class="col-xs-3"></div>
+                      <div class="col-xs-6"></div>
+                      <div class="col-xs-3"></div>      
+                  </div>
+                  <p class="text-center">Molasses Glaze, Thumbalina Carrots, Black Pepper Vinaigrette</p>
+                  <h3 class="text-center">Sweet Tea Brined Pork</h3>
+                  <div class="row">
+                      <div class="col-xs-3"></div>
+                      <div class="col-xs-6"></div>
+                      <div class="col-xs-3"></div>      
+                  </div>
+                  <p class="text-center">Pimento Cheese Grits, Fried Okra, Bourbon Jus</p>
+                  <h3 class="text-center">Crispy Pork Belly</h3>
+                  <div class="row">
+                      <div class="col-xs-3"></div>
+                      <div class="col-xs-6"></div>
+                      <div class="col-xs-3"></div>      
+                  </div>
+                  <p class="text-center">Smoked Garlic & Chedder Polenta, Poached Duck Egg</p>
+                  <h3 class="text-center">Roasted Rock Cod</h3>
+                  <div class="row">
+                      <div class="col-xs-3"></div>
+                      <div class="col-xs-6"></div>
+                      <div class="col-xs-3"></div>      
+                  </div>
+                  <p class="text-center">Smoked Chorizo Broth, White Beans, Spinach, Parsley-Garlic Picada</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    <div class="modal fade" id="brunch-menu" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
@@ -1143,7 +1330,6 @@ they will be designed to invite interaction with the guests at the table, as the
             <div class="col-xs-3"></div>
             <div class="col-xs-6 text-center">
                 <!-- Begin MailChimp Signup Form -->
-<link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
 <style type="text/css">
 	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
 	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
@@ -1163,7 +1349,6 @@ they will be designed to invite interaction with the guests at the table, as the
     </div> 
 <!--End mc_embed_signup-->
         <div id="contact-anchor" class="text-center">
-             <h2>Contact Us</h2>       
         </div>  
         <div class="row contact">        
             <div class="col-xs-3">        
@@ -1198,7 +1383,7 @@ they will be designed to invite interaction with the guests at the table, as the
                 <a href="#top"><p>Back to Top</p></a>
             </div>
             <div class="col-xs-4 text-center">
-                <p>612 E. Carson Ave., Las Vegas, NV 89101</p>
+                <p><a href="https://www.google.com/maps/place/612+Carson+Ave,+Las+Vegas,+NV+89101" target="_blank">612 E. Carson Ave., Las Vegas, NV 89101</a></p>
             </div>
             <div class="col-xs-3 text-center">
             <p><a class="btn btn-lg btn-primary" href="#" role="button">Make a Reservation</a></p>
@@ -1231,6 +1416,7 @@ they will be designed to invite interaction with the guests at the table, as the
 	});
     </script>
     <script src="assets/bootstrap-3.1.1-dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/cssmenu.js"></script>
     <script src="assets/js/modal-menu.js"></script>
 </body>
 </html>

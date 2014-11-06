@@ -5,6 +5,9 @@ $(document).ready(function(){
     var $lunch = $('#lunch-menu').modal({
         show: false
     });
+    var $brunch = $('#brunch-menu').modal({
+        show: false
+    });
     var $dinner = $('#dinner-menu').modal({
         show: false
     });
@@ -14,6 +17,11 @@ $(document).ready(function(){
     var $ingredients = $('#ingredients-menu').modal({
         show: false
     });
+    
+    
+    
+    
+    
     $('#ingredients').on('click', function() {
         $ingredients.modal('show');
     });
@@ -22,6 +30,9 @@ $(document).ready(function(){
     });
     $('#lunch').on('click', function() {
         $lunch.modal('show');
+    });
+    $('#brunch').on('click', function() {
+        $brunch.modal('show');
     });
     $('#dinner').on('click', function() {
         $dinner.modal('show');
@@ -35,10 +46,28 @@ $(document).ready(function(){
     $('#lunch-mobile').on('click', function() {
         $lunch.modal('show');
     });
+    $('#brunch-mobile').on('click', function() {
+        $lunch.modal('show');
+    });
     $('#dinner-mobile').on('click', function() {
         $dinner.modal('show');
     });
-    $('#dessert-mobile').on('click', function() {
+    $('#dessert-list').on('click', function() {
+        $dessert.modal('show');
+    });
+    $('#drinks-li').on('click', function() {
+        $drinks.modal('show');
+    });
+    $('#lunch-li').on('click', function() {
+        $lunch.modal('show');
+    });
+    $('#brunch-li').on('click', function() {
+        $lunch.modal('show');
+    });
+    $('#dinner-li').on('click', function() {
+        $dinner.modal('show');
+    });
+    $('#dessert-li').on('click', function() {
         $dessert.modal('show');
     });
 });

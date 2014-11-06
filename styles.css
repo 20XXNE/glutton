@@ -1,7 +1,7 @@
 @font-face{
-    font-family: "Roboto-Thin";
-    src: local("Roboto-Thin"),
-    url('./assets/fonts/Roboto-Thin.ttf');
+    font-family: "Roboto-Regular";
+    src: local("Roboto-Regular"),
+    url('./assets/fonts/Roboto-Regular.ttf');
     font-weight: normal;
 }
 @font-face{
@@ -10,8 +10,9 @@
     font-weight: normal;
 }
 body{
-    font-family: "Roboto-Thin";
+    font-family: "Roboto-Regular";
     background: url("assets/img/woodbackground-big.jpg") fixed repeat;
+    font-weight: bold;
 }
 h1, h2, h3{
     font-family: "School Book New";
@@ -84,6 +85,9 @@ p{
 .menu #dessert, #dessert-mobile{
     background-image: url("assets/img/dessert.png");
 }
+.menu #brunch, #brunch-mobile{
+    background-image: url("assets/img/brunch.jpg");
+}
 
 .menu .col-md-4{
     height: 321px; /* scale down images to around 300px before using */
@@ -125,7 +129,7 @@ p{
         color: rgba(0, 0, 0, 0.1);
     }
 .menu h1{
-    font-family: "Roboto-thin";
+    font-family: "Roboto-Regular";
 }
 #button{
     margin 0 auto;
@@ -242,7 +246,6 @@ p{
         list-style: none;
         font-size: 1.375em;
     }
-    
     ul li a{
         color: #000000; /*#42210B*/
         transition: color 0.4s;
